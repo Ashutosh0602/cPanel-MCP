@@ -1,0 +1,52 @@
+{
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "vscode_custom_css.imports": [
+        "file://.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+    ],
+    "animations.Enabled": true,
+    "editor.minimap.enabled": false,
+    "github.copilot.chat.agent.thinkingTool": true,
+    "github.copilot.chat.agent.runTasks": true,
+    "chat.mcp.discovery.enabled": true,
+    "mcp": {
+        
+
+
+        "inputs": [],
+        "servers": {
+            "time": {
+                "command": "docker",
+                "args": [
+                    "run",
+                    "-i",
+                    "--rm",
+                    "mcp/time"
+                ]
+            },
+            "ats": {
+                "command": "node",
+                "args": [
+                    "/Users/arai1/mcp/ats/build/index.js"
+                ],
+                "env": {"username":"mparmar@godaddy.com", "password": "password"}
+            },
+            "swagger-qa": {
+                "command": "uv",
+                "args": [
+                    "--directory",
+                    "/Users/arai1/mcp/llm",
+                    "run",
+                    "mcp_server.py"
+                ],
+            } 
+        }
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
